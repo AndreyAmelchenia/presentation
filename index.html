@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>ReactJS</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,156 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<div>
+							<img height="400" src="/assets/1024px-React-icon.svg.png" alt="">
+						</div>
+						<h1>`
+							React Js
+						</h1>
+					</section>
+					<section>
+						<h2><a href="https://en.wikipedia.org/wiki/React_(web_framework)">React</a></h2>
+						<p class="fragment fade-up">What is React?</p>
+						<p style="color: teal; text-align: left; font-size: large;" class="fragment fade-up">Definitions from Wikipedia</p>
+						<p style="text-align: justify; color: rgb(147, 174, 213); font-size: x-large;" class="fragment fade-up">React: 
+							<span style="color: white;"  class="fragment fade-up">
+								is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+								React can be used as a base in the development of single-page or mobile applications. However, 
+								React is only concerned with rendering data to the DOM, and so creating React applications usually 
+								requires the use of additional libraries for state management and routing.
+							</span>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section style="height: 100wh;">
+						<h2>React</h2>
+						<ul>
+							<li class="fragment fade-up"><p>Allows us to write declarative views that “react” to changes in data</p>
+								<p class="fragment fade-in-then-out" style="font-size: x-large;">Declarative programming is a non-imperative style of programming in which programs describe their
+									 desired results without explicitly listing commands or steps that must be performed.
+								</p>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Declarative programming in React</h3>
+						<pre>
+							<code style="font-size: 20px;" class="hljs stretch" data-line-numbers="1,2-3,4,6-10" data-trim>
+								import React from "react";
+
+								class App extends React.Component {
+								  state = {
+								    message: "Hello react"
+								  }
+								  render() {
+								    return (
+								     <div className="App">
+								        <h1>{this.state.message}</h1>
+								          <!-- <button onClick={(e) \=>\ this.setState({
+								            message: "Hello World"
+								          })} >
+								          Change Message
+								          </button> -->
+								      </div>
+								    );
+								  }
+								}
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2>React</h2>
+						<ul>
+							<li><p>Allows us to write declarative views that “react” to changes in data</p></li>
+							<li>Allows us to abstract complex problems into smaller components</li>
+							<li class="fragment fade-up">Allows us to write simple code that is still performant</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<pre>
+						<code class="hljs stretch" data-line-numbers="1|2-3|4,6-10" data-trim data-noescape>
+							import React, { useState } from 'react';
+								
+							function Example() {
+								const [count, setCount] = useState(0);
+								
+								return (
+									<div>
+										<p>You clicked {count} times</p>
+											Click me
+										</button>
+									</div>
+								);
+							}
+							import React, { useState } from 'react';
+								
+							function Example() {
+								const [count, setCount] = useState(0);
+								
+								return (
+									<div>
+										<p>You clicked {count} times</p>
+											Click me
+										</button>
+									</div>
+								);
+							}
+						</code>
+				</pre>
+				</section>
+				<section>
+					<section>Vertical Slide 1</section>
+					<section>Vertical Slide 2</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Page title
+				
+						A paragraph with some text and a [link](http://hakim.se).
+					</textarea>
+				</section>
+				<section>
+					<section>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment strike">strike</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+						<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+						<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+						<p class="fragment highlight-current-blue">blue only once</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+				<section>
+					<p class="fragment grow">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment strike">strike</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+					<p class="fragment highlight-current-blue">blue only once</p>
+					<p class="fragment highlight-red">highlight-red</p>
+					<p class="fragment highlight-green">highlight-green</p>
+					<p class="fragment highlight-blue">highlight-blue</p>
+				</section>
+				<section>
+					<span class="fragment fade-in">
+						<span class="fragment fade-out">I'll fade in, then out</span>
+					</span>
+				</section>
+				<section>Single Horizontal Slide</section>
+				<section>
+					<section>Vertical Slide 1</section>
+					<section>Vertical Slide 2</section>
+				</section>
 			</div>
 		</div>
 
