@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>ReactJS</title>
+		<title>React JS</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -30,20 +30,21 @@
 						<div>
 							<img height="400" src="/assets/1024px-React-icon.svg.png" alt="">
 						</div>
-						<h1>`
+						<h1>
 							React Js
 						</h1>
 					</section>
 					<section>
-						<h2><a href="https://en.wikipedia.org/wiki/React_(web_framework)">React</a></h2>
+						<h2>React</h2>
 						<p class="fragment fade-up">What is React?</p>
 						<p style="color: teal; text-align: left; font-size: large;" class="fragment fade-up">Definitions from Wikipedia</p>
+						<p style="color: rgb(193, 82, 48); text-align: left; font-size: large;" class="fragment fade-up"><a  href="https://en.wikipedia.org/wiki/React_(web_framework)">https://en.wikipedia.org/wiki/React_(web_framework)</a></p>
 						<p style="text-align: justify; color: rgb(147, 174, 213); font-size: x-large;" class="fragment fade-up">React: 
 							<span style="color: white;"  class="fragment fade-up">
-								is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.
+								is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.<br>
 								React can be used as a base in the development of single-page or mobile applications. However, 
 								React is only concerned with rendering data to the DOM, and so creating React applications usually 
-								requires the use of additional libraries for state management and routing.
+								requires the use of additional libraries for state management and routing. Redux and React Router are respective examples of such libraries.
 							</span>
 						</p>
 					</section>
@@ -62,22 +63,18 @@
 					<section>
 						<h3>Declarative programming in React</h3>
 						<pre>
-							<code style="font-size: 20px;" class="hljs stretch" data-line-numbers="1,2-3,4,6-10" data-trim>
-								import React from "react";
-
-								class App extends React.Component {
-								  state = {
-								    message: "Hello react"
+							<code style="font-size: 20px;" class="hljs stretch"  data-trim>
+								class Button extends React.Component{
+								  this.state = { color: 'red' }
+								  handleChange = () => {
+								    const color = this.state.color === 'red' ? 'blue' : 'red';
+								    this.setState({ color });
 								  }
 								  render() {
 								    return (
-								     <div className="App">
-								        <h1>{this.state.message}</h1>
-								          <!-- <button onClick={(e) \=>\ this.setState({
-								            message: "Hello World"
-								          })} >
-								          Change Message
-								          </button> -->
+								      <div>
+								        <button className=`btn ${this.state.color}` onClick={this.handleChange}>
+								        </button>
 								      </div>
 								    );
 								  }
@@ -90,41 +87,48 @@
 						<ul>
 							<li><p>Allows us to write declarative views that “react” to changes in data</p></li>
 							<li>Allows us to abstract complex problems into smaller components</li>
-							<li class="fragment fade-up">Allows us to write simple code that is still performant</li>
+						</ul>
+					</section>
+					<section>
+						<h2>React</h2>
+						<ul>
+							<li><p>Allows us to write declarative views that “react” to changes in data</p></li>
+							<li>Allows us to abstract complex problems into smaller components</li>
+							<li>Allows us to write simple code that is still performant</li>
 						</ul>
 					</section>
 				</section>
 				<section>
-					<pre>
-						<code class="hljs stretch" data-line-numbers="1|2-3|4,6-10" data-trim data-noescape>
-							import React, { useState } from 'react';
-								
-							function Example() {
-								const [count, setCount] = useState(0);
-								
-								return (
-									<div>
-										<p>You clicked {count} times</p>
-											Click me
-										</button>
-									</div>
-								);
-							}
-							import React, { useState } from 'react';
-								
-							function Example() {
-								const [count, setCount] = useState(0);
-								
-								return (
-									<div>
-										<p>You clicked {count} times</p>
-											Click me
-										</button>
-									</div>
-								);
-							}
-						</code>
-				</pre>
+					<h2>React is Easily Componentized</h2>
+					<ul>
+						<li class="fragment fade-up"><h5>Breaking a complex problem into discrete components</h5></li>
+						<li class="fragment fade-up"><ul>
+							<h5>Can reuse these component</h5>
+							<li class="fragment fade-up">Consistency</li>
+							<li class="fragment fade-up">Iteration speed</li>
+						</ul></li>
+						<li class="fragment fade-up"><h5>React’s declarative nature makes it easy to customize Components</h5></li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>React is Performant</h2>
+						<ul>
+							<li class="fragment fade-up"><h5>We write what we want and React will do the hard work</h5></li>
+							<li class="fragment fade-up"><ul>
+								<h5>Reconciliation - the process by which React syncs
+									changes in app state to the DOM</h5>
+								<li class="fragment fade-up">Reconstructs the virtual DOM</li>
+								<li class="fragment fade-up">Diffs the virtual DOM against the DOM</li>
+								<li class="fragment fade-up">Only makes the changes needed</li>
+							</ul></li>
+						</ul>
+					</section>
+					<section>
+						<div>
+							<img  src="/assets/figure1.png" alt="">
+						</div>
+					</section>
 				</section>
 				<section>
 					<section>Vertical Slide 1</section>
