@@ -51,7 +51,7 @@
 				</section>
 				<section>
 					<section style="height: 100wh;">
-						<h2>React</h2>
+						<h2  style="color: teal;">React</h2>
 						<ul>
 							<li class="fragment fade-up"><p>Allows us to write declarative views that “react” to changes in data</p>
 								<p class="fragment fade-in-then-out" style="font-size: x-large;">Declarative programming is a non-imperative style of programming in which programs describe their
@@ -61,7 +61,7 @@
 						</ul>
 					</section>
 					<section>
-						<h3>Declarative programming in React</h3>
+						<h3 style="color: teal;">Declarative programming in React</h3>
 						<pre>
 							<code style="font-size: 20px;" class="hljs stretch"  data-trim>
 								class Button extends React.Component{
@@ -83,7 +83,7 @@
 						</pre>
 					</section>
 					<section>
-						<h2>React</h2>
+						<h2 style="color: teal;">React</h2>
 						<ul>
 							<li><p>Allows us to write declarative views that “react” to changes in data</p></li>
 							<li>Allows us to abstract complex problems into smaller components</li>
@@ -99,7 +99,7 @@
 					</section>
 				</section>
 				<section>
-					<h2>React is Easily Componentized</h2>
+					<h2 style="color: teal;">React is Easily Componentized</h2>
 					<ul>
 						<li class="fragment fade-up"><h5>Breaking a complex problem into discrete components</h5></li>
 						<li class="fragment fade-up"><ul>
@@ -112,7 +112,7 @@
 				</section>
 				<section>
 					<section>
-						<h2>React is Performant</h2>
+						<h2 style="color: teal;">React is Performant</h2>
 						<ul>
 							<li class="fragment fade-up"><h5>We write what we want and React will do the hard work</h5></li>
 							<li class="fragment fade-up"><ul>
@@ -131,53 +131,51 @@
 					</section>
 				</section>
 				<section>
-					<section>Vertical Slide 1</section>
-					<section>Vertical Slide 2</section>
-				</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Page title
-				
-						A paragraph with some text and a [link](http://hakim.se).
-					</textarea>
-				</section>
-				<section>
 					<section>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment strike">strike</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
-						<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
-						<p class="fragment highlight-current-blue">blue only once</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<h2 style="color: teal;">Writing react</h2>
+						<ul>
+							<li class="fragment fade-up"><ul>
+								<h5>JSX</h5>
+								<li class="fragment fade-up">XML-like syntax extension of JavaScript</li>
+								<li class="fragment fade-up">Transpiles to JavaScript</li>
+								<li class="fragment fade-up">TLowercase tags are treated as HTML / SVG tags, uppercase are treated as custom components</li>
+							</ul></li>
+						</ul>
 					</section>
-				</section>
-				<section>
-					<p class="fragment grow">grow</p>
-					<p class="fragment shrink">shrink</p>
-					<p class="fragment strike">strike</p>
-					<p class="fragment fade-out">fade-out</p>
-					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
-					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
-					<p class="fragment highlight-current-blue">blue only once</p>
-					<p class="fragment highlight-red">highlight-red</p>
-					<p class="fragment highlight-green">highlight-green</p>
-					<p class="fragment highlight-blue">highlight-blue</p>
-				</section>
-				<section>
-					<span class="fragment fade-in">
-						<span class="fragment fade-out">I'll fade in, then out</span>
-					</span>
-				</section>
-				<section>Single Horizontal Slide</section>
-				<section>
-					<section>Vertical Slide 1</section>
-					<section>Vertical Slide 2</section>
+					<section>
+						<ul><li>
+							<ul>
+								<h5>Components are just functions</h5>
+								<li class="fragment fade-up">Returns a node (something React can render, e.g. a code 
+									<pre>
+										<code style="font-size: 20px;" class="hljs stretch"  data-trim><Element /></code>
+									</pre> )
+								</li>
+								<li class="fragment fade-up">Receives an object of the properties that are passed to the element</li>
+							</ul>
+						</li></ul>
+					</section>
+					<section>
+						<h2 style="color: teal;">Props</h2>
+						<ul>
+							<li class="fragment fade-up"><p>Passed as an object to a component and used to compute
+								the returned node
+								</p></li>
+							<li class="fragment fade-up">Changes in these props will cause a recomputation of the
+								returned node (“render”)
+								</li>
+							<li class="fragment fade-up">Unlike in HTML, these can be any JS value</li>
+						</ul>
+					</section>
+					<section>
+						<h2 style="color: teal;">State</h2>
+						<ul>
+							<li class="fragment fade-up"><p>Adds internally-managed configuration for a component</p></li>
+							<li class="fragment fade-up">`this.state` is a class property on the component instance</li>
+							<li class="fragment fade-up">Can only be updated by invoking `this.setState()`</li>
+							<li class="fragment fade-up">Changes in state also cause re-renders`</li>
+						</ul>
+					</section>
 				</section>
 			</div>
 		</div>
